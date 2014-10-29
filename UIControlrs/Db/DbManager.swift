@@ -53,8 +53,14 @@ class DbManager: NSObject
                 {
                     var studentObj:Student = Student()
                     let name = sqlite3_column_text(stmt, 0)
-//                    studentObj.studentName = NSString(UTF8String: name) as String
+                    let rollNumber = sqlite3_column_int(stmt, 1)
+                    let studentClass = sqlite3_column_text(stmt, 2)
+                    let age = sqlite3_column_int(stmt, 3)
                     
+                    studentObj.studentName = String.fromCString(UnsafePointer<CChar>(name))!
+                    studentObj.studentRoolNumber = String(rollNumber)
+                    studentObj.studentClass = String.fromCString(UnsafePointer<CChar>(studentClass))!
+                    studentObj.studentAge = Int(age)
                     studentsArray.addObject(studentObj)
                     
                 }

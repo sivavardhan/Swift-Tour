@@ -13,7 +13,7 @@ class StudentsListViewController:UIViewController,UITableViewDataSource {
     var studentsDetails:NSMutableArray = NSMutableArray()
     override func viewDidLoad() {
         super.viewDidLoad()
-        addStudentDetailsStatically()
+//        addStudentDetailsStatically()
         self.title = "Students"
         var navigationRightBarButton = UIBarButtonItem(title: "Add", style: UIBarButtonItemStyle.Plain, target: self, action: nil)
         self.navigationItem.rightBarButtonItem = navigationRightBarButton
@@ -21,7 +21,7 @@ class StudentsListViewController:UIViewController,UITableViewDataSource {
         print(documentPath)
         var dbClass:DbManager = DbManager()
         dbClass.copyFilesFrombundelToDocumentary()
-        dbClass.selectStudentsWithQuery("SELECT * FROM Studebt")
+        self.studentsDetails = dbClass.selectStudentsWithQuery("SELECT * FROM Studebt")
     }
     func addStudentDetailsStatically()
     {
