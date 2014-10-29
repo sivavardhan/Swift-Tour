@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B73540721A00CAB800969FBA /* StudentsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73540711A00CAB800969FBA /* StudentsListViewController.swift */; };
+		B73540741A00CAE200969FBA /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73540731A00CAE200969FBA /* Student.swift */; };
+		B73540761A00CB0300969FBA /* StudentAddOrDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73540751A00CB0300969FBA /* StudentAddOrDetailViewController.swift */; };
+		B73540781A00CC6400969FBA /* DbManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73540771A00CC6400969FBA /* DbManager.swift */; };
+		B735407A1A00D07E00969FBA /* StudentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73540791A00D07E00969FBA /* StudentCell.swift */; };
 		B788C54A19FFB2E200FA9ECE /* UIButtonDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B788C54919FFB2E200FA9ECE /* UIButtonDemo.swift */; };
 		B7A1F25919E7D8F60036FEEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A1F25819E7D8F60036FEEC /* AppDelegate.swift */; };
 		B7A1F25B19E7D8F60036FEEC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A1F25A19E7D8F60036FEEC /* ViewController.swift */; };
@@ -15,6 +20,9 @@
 		B7A1F26319E7D8F60036FEEC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7A1F26119E7D8F60036FEEC /* LaunchScreen.xib */; };
 		B7A1F26F19E7D8F60036FEEC /* UIControlrsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A1F26E19E7D8F60036FEEC /* UIControlrsTests.swift */; };
 		B7A1F27B19E7E96E0036FEEC /* UILabelDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A1F27A19E7E96E0036FEEC /* UILabelDemoViewController.swift */; };
+		B7BC12681A00E55300717B1C /* photo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B7BC12671A00E55300717B1C /* photo.jpg */; };
+		B7BC126A1A00F97700717B1C /* Student.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = B7BC12691A00F97700717B1C /* Student.sqlite */; };
+		B7BC126C1A00FA6200717B1C /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B7BC126B1A00FA6200717B1C /* libsqlite3.0.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +36,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B73540711A00CAB800969FBA /* StudentsListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentsListViewController.swift; sourceTree = "<group>"; };
+		B73540731A00CAE200969FBA /* Student.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
+		B73540751A00CB0300969FBA /* StudentAddOrDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentAddOrDetailViewController.swift; sourceTree = "<group>"; };
+		B73540771A00CC6400969FBA /* DbManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DbManager.swift; sourceTree = "<group>"; };
+		B73540791A00D07E00969FBA /* StudentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentCell.swift; sourceTree = "<group>"; };
 		B788C54919FFB2E200FA9ECE /* UIButtonDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonDemo.swift; sourceTree = "<group>"; };
 		B7A1F25319E7D8F60036FEEC /* UIControlrs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIControlrs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7A1F25719E7D8F60036FEEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -40,6 +53,11 @@
 		B7A1F26D19E7D8F60036FEEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B7A1F26E19E7D8F60036FEEC /* UIControlrsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIControlrsTests.swift; sourceTree = "<group>"; };
 		B7A1F27A19E7E96E0036FEEC /* UILabelDemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelDemoViewController.swift; sourceTree = "<group>"; };
+		B7BC12671A00E55300717B1C /* photo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photo.jpg; sourceTree = "<group>"; };
+		B7BC12691A00F97700717B1C /* Student.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = Student.sqlite; sourceTree = "<group>"; };
+		B7BC126B1A00FA6200717B1C /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		B7BC126D1A01164500717B1C /* UIControlrs-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControlrs-Bridging-Header.h"; sourceTree = "<group>"; };
+		B7BC126E1A0118EA00717B1C /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PrefixHeader.pch; path = UIControlrs/Db/PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7BC126C1A00FA6200717B1C /* libsqlite3.0.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,9 +79,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B73540701A00CA9300969FBA /* Db */ = {
+			isa = PBXGroup;
+			children = (
+				B7BC12691A00F97700717B1C /* Student.sqlite */,
+				B7BC12671A00E55300717B1C /* photo.jpg */,
+				B73540711A00CAB800969FBA /* StudentsListViewController.swift */,
+				B73540731A00CAE200969FBA /* Student.swift */,
+				B73540751A00CB0300969FBA /* StudentAddOrDetailViewController.swift */,
+				B73540771A00CC6400969FBA /* DbManager.swift */,
+				B73540791A00D07E00969FBA /* StudentCell.swift */,
+			);
+			path = Db;
+			sourceTree = "<group>";
+		};
 		B7A1F24A19E7D8F60036FEEC = {
 			isa = PBXGroup;
 			children = (
+				B7BC126D1A01164500717B1C /* UIControlrs-Bridging-Header.h */,
+				B7BC126E1A0118EA00717B1C /* PrefixHeader.pch */,
+				B7BC126B1A00FA6200717B1C /* libsqlite3.0.dylib */,
 				B7A1F25519E7D8F60036FEEC /* UIControlrs */,
 				B7A1F26B19E7D8F60036FEEC /* UIControlrsTests */,
 				B7A1F25419E7D8F60036FEEC /* Products */,
@@ -81,6 +117,7 @@
 		B7A1F25519E7D8F60036FEEC /* UIControlrs */ = {
 			isa = PBXGroup;
 			children = (
+				B73540701A00CA9300969FBA /* Db */,
 				B7A1F25819E7D8F60036FEEC /* AppDelegate.swift */,
 				B7A1F25A19E7D8F60036FEEC /* ViewController.swift */,
 				B7A1F27A19E7E96E0036FEEC /* UILabelDemoViewController.swift */,
@@ -200,6 +237,8 @@
 			files = (
 				B7A1F25E19E7D8F60036FEEC /* Main.storyboard in Resources */,
 				B7A1F26319E7D8F60036FEEC /* LaunchScreen.xib in Resources */,
+				B7BC126A1A00F97700717B1C /* Student.sqlite in Resources */,
+				B7BC12681A00E55300717B1C /* photo.jpg in Resources */,
 				B7A1F26019E7D8F60036FEEC /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -218,6 +257,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B73540721A00CAB800969FBA /* StudentsListViewController.swift in Sources */,
+				B73540741A00CAE200969FBA /* Student.swift in Sources */,
+				B73540761A00CB0300969FBA /* StudentAddOrDetailViewController.swift in Sources */,
+				B735407A1A00D07E00969FBA /* StudentCell.swift in Sources */,
+				B73540781A00CC6400969FBA /* DbManager.swift in Sources */,
 				B788C54A19FFB2E200FA9ECE /* UIButtonDemo.swift in Sources */,
 				B7A1F25B19E7D8F60036FEEC /* ViewController.swift in Sources */,
 				B7A1F25919E7D8F60036FEEC /* AppDelegate.swift in Sources */,
@@ -351,10 +395,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer: srinivasa bhupathiraju (H463656NKN)";
+				GCC_PREFIX_HEADER = PrefixHeader.pch;
 				INFOPLIST_FILE = UIControlrs/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "db893ccb-d03f-4e6a-b442-f0ec951e3d57";
+				SWIFT_OBJC_BRIDGING_HEADER = "UIControlrs-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -363,10 +409,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer: srinivasa bhupathiraju (H463656NKN)";
+				GCC_PREFIX_HEADER = PrefixHeader.pch;
 				INFOPLIST_FILE = UIControlrs/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "db893ccb-d03f-4e6a-b442-f0ec951e3d57";
+				SWIFT_OBJC_BRIDGING_HEADER = "UIControlrs-Bridging-Header.h";
 			};
 			name = Release;
 		};
