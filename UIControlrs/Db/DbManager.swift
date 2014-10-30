@@ -72,5 +72,73 @@ class DbManager: NSObject
         sqlite3_close(database)
         return studentsArray
     }
-    
+    func executeSqlStatment(query:NSString) -> Bool
+    {
+        var isExcuteScuess:Bool = false
+        let documentPath = getDocumentPath()
+        var utf8DocPath = documentPath.cStringUsingEncoding(NSUTF8StringEncoding)
+        var dataBase:COpaquePointer = nil
+        if sqlite3_open(utf8DocPath, &dataBase) == SQLITE_OK
+        {
+            let queryUTF8 = query.cStringUsingEncoding(NSUTF8StringEncoding)
+            var statment:COpaquePointer = nil
+            if sqlite3_prepare_v2(dataBase, queryUTF8, -1, &statment, nil) == SQLITE_OK
+            {
+                if sqlite3_step(statment) == SQLITE_DONE
+                {
+                    isExcuteScuess = true
+                }
+                else
+                {
+                    isExcuteScuess = false
+                }
+            }
+            else
+            {
+                println("There is a pbm During Prepare a statment")
+
+            }
+            sqlite3_finalize(statment)
+        }
+        else
+        {
+            println("There is a pbm During open Database")
+        }
+        sqlite3_close(dataBase)
+
+        return isExcuteScuess
+    }
+    func getHeighstRollNumber() -> Int
+    {
+        var rollNumber=0
+        let documentPath = getDocumentPath()
+        var utf8DocPath = documentPath.cStringUsingEncoding(NSUTF8StringEncoding)
+        var dataBase:COpaquePointer = nil
+        if sqlite3_open(utf8DocPath, &dataBase) == SQLITE_OK
+        {
+            let query = "select RollNo From Studebt ORDER BY RollNo DESC LIMIT 1"
+            let queryUTF8 = query.cStringUsingEncoding(NSUTF8StringEncoding)
+            var statment:COpaquePointer = nil
+            if sqlite3_prepare_v2(dataBase, queryUTF8!, -1, &statment, nil) == SQLITE_OK
+            {
+                if sqlite3_step(statment) == SQLITE_ROW
+                {
+                    rollNumber = Int(sqlite3_column_int(statment, 0))
+                }
+            }
+            else
+            {
+                println("There is a pbm During Prepare a statment")
+                
+            }
+            sqlite3_finalize(statment)
+        }
+        else
+        {
+            println("There is a pbm During open Database")
+        }
+        sqlite3_close(dataBase)
+
+        return rollNumber
+    }
 }
