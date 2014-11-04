@@ -12,6 +12,8 @@
 		B73540761A00CB0300969FBA /* StudentAddOrDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73540751A00CB0300969FBA /* StudentAddOrDetailViewController.swift */; };
 		B73540781A00CC6400969FBA /* DbManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73540771A00CC6400969FBA /* DbManager.swift */; };
 		B735407A1A00D07E00969FBA /* StudentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73540791A00D07E00969FBA /* StudentCell.swift */; };
+		B74A90301A08D5AC00242210 /* PizzaListVIewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74A902F1A08D5AC00242210 /* PizzaListVIewController.swift */; };
+		B74A90321A08D60F00242210 /* PizzaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74A90311A08D60F00242210 /* PizzaModel.swift */; };
 		B788C54A19FFB2E200FA9ECE /* UIButtonDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B788C54919FFB2E200FA9ECE /* UIButtonDemo.swift */; };
 		B7A1F25919E7D8F60036FEEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A1F25819E7D8F60036FEEC /* AppDelegate.swift */; };
 		B7A1F25B19E7D8F60036FEEC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A1F25A19E7D8F60036FEEC /* ViewController.swift */; };
@@ -23,7 +25,6 @@
 		B7BC12681A00E55300717B1C /* photo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B7BC12671A00E55300717B1C /* photo.jpg */; };
 		B7BC126A1A00F97700717B1C /* Student.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = B7BC12691A00F97700717B1C /* Student.sqlite */; };
 		B7BC126C1A00FA6200717B1C /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B7BC126B1A00FA6200717B1C /* libsqlite3.0.dylib */; };
-		B7BD12DA1A03997B00B6714D /* CountriesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BD12D91A03997B00B6714D /* CountriesListView.swift */; };
 		B7BD12DC1A039BC400B6714D /* UrlConnectionClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BD12DB1A039BC400B6714D /* UrlConnectionClass.swift */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +44,8 @@
 		B73540751A00CB0300969FBA /* StudentAddOrDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentAddOrDetailViewController.swift; sourceTree = "<group>"; };
 		B73540771A00CC6400969FBA /* DbManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DbManager.swift; sourceTree = "<group>"; };
 		B73540791A00D07E00969FBA /* StudentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentCell.swift; sourceTree = "<group>"; };
+		B74A902F1A08D5AC00242210 /* PizzaListVIewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PizzaListVIewController.swift; sourceTree = "<group>"; };
+		B74A90311A08D60F00242210 /* PizzaModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PizzaModel.swift; sourceTree = "<group>"; };
 		B788C54919FFB2E200FA9ECE /* UIButtonDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonDemo.swift; sourceTree = "<group>"; };
 		B7A1F25319E7D8F60036FEEC /* UIControlrs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIControlrs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7A1F25719E7D8F60036FEEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -60,7 +63,6 @@
 		B7BC126B1A00FA6200717B1C /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 		B7BC126D1A01164500717B1C /* UIControlrs-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControlrs-Bridging-Header.h"; sourceTree = "<group>"; };
 		B7BC126E1A0118EA00717B1C /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PrefixHeader.pch; path = UIControlrs/Db/PrefixHeader.pch; sourceTree = "<group>"; };
-		B7BD12D91A03997B00B6714D /* CountriesListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountriesListView.swift; sourceTree = "<group>"; };
 		B7BD12DB1A039BC400B6714D /* UrlConnectionClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UrlConnectionClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -163,8 +165,9 @@
 		B7BD12D81A03995700B6714D /* XML */ = {
 			isa = PBXGroup;
 			children = (
-				B7BD12D91A03997B00B6714D /* CountriesListView.swift */,
 				B7BD12DB1A039BC400B6714D /* UrlConnectionClass.swift */,
+				B74A902F1A08D5AC00242210 /* PizzaListVIewController.swift */,
+				B74A90311A08D60F00242210 /* PizzaModel.swift */,
 			);
 			path = XML;
 			sourceTree = "<group>";
@@ -273,6 +276,8 @@
 			files = (
 				B73540721A00CAB800969FBA /* StudentsListViewController.swift in Sources */,
 				B73540741A00CAE200969FBA /* Student.swift in Sources */,
+				B74A90321A08D60F00242210 /* PizzaModel.swift in Sources */,
+				B74A90301A08D5AC00242210 /* PizzaListVIewController.swift in Sources */,
 				B73540761A00CB0300969FBA /* StudentAddOrDetailViewController.swift in Sources */,
 				B735407A1A00D07E00969FBA /* StudentCell.swift in Sources */,
 				B73540781A00CC6400969FBA /* DbManager.swift in Sources */,
@@ -281,7 +286,6 @@
 				B7BD12DC1A039BC400B6714D /* UrlConnectionClass.swift in Sources */,
 				B7A1F25919E7D8F60036FEEC /* AppDelegate.swift in Sources */,
 				B7A1F27B19E7E96E0036FEEC /* UILabelDemoViewController.swift in Sources */,
-				B7BD12DA1A03997B00B6714D /* CountriesListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

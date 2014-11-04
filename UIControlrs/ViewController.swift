@@ -15,9 +15,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        var urlConnection:UrlConnectionClass = UrlConnectionClass()
-        var xmlString = "<?xml version='1.0' encoding='utf-8'?><soap:Envelope xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' xmlns:soap='http://schemas.xmlsoap.org/soap/envelope/'><soap:Body><GetCitiesByCountry xmlns='http://www.webserviceX.NET'><CountryName>India</CountryName></GetCitiesByCountry></soap:Body></soap:Envelope>"
-        urlConnection.getResponseWithMethod("http://www.webservicex.net/globalweather.asmx?op=GetCitiesByCountry", parameters: xmlString, httpMethod: "POST")
     }
 
     override func didReceiveMemoryWarning() {
@@ -54,6 +51,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         case 16:
             self.performSegueWithIdentifier("database", sender: self)
             println("Local Db Clicked")
+        case 15:
+             self.performSegueWithIdentifier("xmlparsing", sender: self)
         default:
             print("Default")
         }
