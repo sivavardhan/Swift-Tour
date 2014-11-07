@@ -51,6 +51,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         case 16:
             self.performSegueWithIdentifier("database", sender: self)
             println("Local Db Clicked")
+        case 14:
+            self.performSegueWithIdentifier("jsonparsing", sender: self)
         case 15:
              self.performSegueWithIdentifier("xmlparsing", sender: self)
         default:

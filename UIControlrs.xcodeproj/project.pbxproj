@@ -14,6 +14,7 @@
 		B735407A1A00D07E00969FBA /* StudentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73540791A00D07E00969FBA /* StudentCell.swift */; };
 		B74A90301A08D5AC00242210 /* PizzaListVIewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74A902F1A08D5AC00242210 /* PizzaListVIewController.swift */; };
 		B74A90321A08D60F00242210 /* PizzaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74A90311A08D60F00242210 /* PizzaModel.swift */; };
+		B7749CA11A0B7455001F81FA /* MeetingListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7749CA01A0B7455001F81FA /* MeetingListViewController.swift */; };
 		B788C54A19FFB2E200FA9ECE /* UIButtonDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B788C54919FFB2E200FA9ECE /* UIButtonDemo.swift */; };
 		B7A1F25919E7D8F60036FEEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A1F25819E7D8F60036FEEC /* AppDelegate.swift */; };
 		B7A1F25B19E7D8F60036FEEC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A1F25A19E7D8F60036FEEC /* ViewController.swift */; };
@@ -46,6 +47,7 @@
 		B73540791A00D07E00969FBA /* StudentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentCell.swift; sourceTree = "<group>"; };
 		B74A902F1A08D5AC00242210 /* PizzaListVIewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PizzaListVIewController.swift; sourceTree = "<group>"; };
 		B74A90311A08D60F00242210 /* PizzaModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PizzaModel.swift; sourceTree = "<group>"; };
+		B7749CA01A0B7455001F81FA /* MeetingListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeetingListViewController.swift; sourceTree = "<group>"; };
 		B788C54919FFB2E200FA9ECE /* UIButtonDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonDemo.swift; sourceTree = "<group>"; };
 		B7A1F25319E7D8F60036FEEC /* UIControlrs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIControlrs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7A1F25719E7D8F60036FEEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -99,6 +101,14 @@
 			path = Db;
 			sourceTree = "<group>";
 		};
+		B74A90331A090B3F00242210 /* JSONParsing */ = {
+			isa = PBXGroup;
+			children = (
+				B7749CA01A0B7455001F81FA /* MeetingListViewController.swift */,
+			);
+			path = JSONParsing;
+			sourceTree = "<group>";
+		};
 		B7A1F24A19E7D8F60036FEEC = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +133,7 @@
 		B7A1F25519E7D8F60036FEEC /* UIControlrs */ = {
 			isa = PBXGroup;
 			children = (
+				B74A90331A090B3F00242210 /* JSONParsing */,
 				B7BD12D81A03995700B6714D /* XML */,
 				B73540701A00CA9300969FBA /* Db */,
 				B7A1F25819E7D8F60036FEEC /* AppDelegate.swift */,
@@ -281,6 +292,7 @@
 				B73540761A00CB0300969FBA /* StudentAddOrDetailViewController.swift in Sources */,
 				B735407A1A00D07E00969FBA /* StudentCell.swift in Sources */,
 				B73540781A00CC6400969FBA /* DbManager.swift in Sources */,
+				B7749CA11A0B7455001F81FA /* MeetingListViewController.swift in Sources */,
 				B788C54A19FFB2E200FA9ECE /* UIButtonDemo.swift in Sources */,
 				B7A1F25B19E7D8F60036FEEC /* ViewController.swift in Sources */,
 				B7BD12DC1A039BC400B6714D /* UrlConnectionClass.swift in Sources */,

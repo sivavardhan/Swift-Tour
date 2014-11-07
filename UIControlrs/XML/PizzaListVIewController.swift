@@ -45,11 +45,7 @@ class PizzaListVIewController:UIViewController,ConnectionProtocol
     
     //MARK: UItabelViewDataSource Methods
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if self.pizzasListArray.count > 0
-        {
         return self.pizzasListArray.count
-        }
-        return 0
     }
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell:UITableViewCell = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "cell")
